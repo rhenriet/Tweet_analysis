@@ -11,7 +11,7 @@ API_KEY = os.getenv("TWITTER_API_KEY")
 headers = {"X-API-Key": API_KEY}
 
 
-def get_all_tweets(username, max_tweets=5):
+def get_all_tweets(username, max_tweets=10):
     all_tweets = []
     cursor = ""
     page = 1
@@ -83,7 +83,7 @@ def save_to_csv(tweets, username):
     return filepath
 
 
-def main(username = "elonmusk" , max_tweets = 5):   
+def main(username = "elonmusk" , max_tweets = 10):   
     tweets = get_all_tweets(username, max_tweets) 
     if tweets:
         print(f"\n Résultat : {len(tweets)} tweets originaux récupérés pour @{username}")

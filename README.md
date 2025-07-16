@@ -56,7 +56,7 @@ Le tableau final des tweets analysés s'affiche directement, et tu peux égaleme
 
 - Via `get_tweets.py` → fonction `get_all_tweets()`
 - Filtrage pour ne garder que les **tweets originaux** (sans réponses ni retweets)
-- Par défaut, **5 tweets** seulement pour **limiter les appels API**, réduire les coûts, et éviter les restrictions
+- Par défaut, **5 ou 10 tweets** seulement pour **limiter les appels API**, réduire les coûts, et éviter les restrictions
 
 📄 **Résultat sauvegardé :** `data/elonmusk_tweets.csv`
 
