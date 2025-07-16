@@ -13,7 +13,7 @@ Il combine :
 ---
 
 ## 🗂️ Arborescence du projet
-
+```
 .
 ├── app.py
 ├── get_tweets.py
@@ -22,7 +22,7 @@ Il combine :
 ├── .env
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## 🚀 Comment lancer le projet
@@ -32,7 +32,7 @@ Il combine :
 pip install -r requirements.txt
 
 
-### 2️⃣ Créer un fichier `.env` (non versionné) à la racine
+### 2️⃣ Créer un fichier `.env` à la racine
 
 OPENAI_API_KEY=ta_clé_openai_ici
 TWITTER_API_KEY=ta_clé_twitter_ici
@@ -93,6 +93,7 @@ Pour protéger les clés d'API, elles sont **stockées dans un fichier `.env`** 
 ### Exemple de fichier `.env`
 
 OPENAI_API_KEY = ta_clé_openai_ici
+
 TWITTER_API_KEY = ta_clé_twitterapi.io
 
 ---
@@ -118,4 +119,5 @@ Cette logique a aussi été pensée en prévision d'une automatisation future.
 ## 💡 Choix techniques & modèle
 
 🧠 **Modèle OpenAI utilisé** : `o1-mini` - Le moins couteux en Token
+
 💬 **Prompt strict et "JSON only"**, afin de garantir une réponse parsable facilement, sans texte parasite.  
